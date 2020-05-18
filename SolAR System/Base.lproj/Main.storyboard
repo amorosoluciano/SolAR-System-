@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="8q1-KK-Rcj">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tXr-a1-R10">
+            <objects>
+                <viewController id="BV1-FR-VrT" customClass="ViewController" customModule="SolAR_System" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="U0K-SW-4ec">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BrB-h1-WRS">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </arscnView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ogV-br-3bK">
+                                <rect key="frame" x="91" y="54" width="72" height="72"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="72" id="2Jc-jV-6ei"/>
+                                    <constraint firstAttribute="height" constant="72" id="7sq-1o-L07"/>
+                                </constraints>
+                                <state key="normal" image="Group 2"/>
+                                <connections>
+                                    <segue destination="Mc6-KW-cDt" kind="presentation" identifier="Identifier" id="uMw-nB-5yZ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DNZ-GP-Lha">
+                                <rect key="frame" x="251" y="54" width="72" height="72"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="72" id="dGw-0b-RqM"/>
+                                    <constraint firstAttribute="width" constant="72" id="nLv-0N-ar6"/>
+                                </constraints>
+                                <state key="normal" image="Group 3"/>
+                                <connections>
+                                    <action selector="screenBtn:" destination="BV1-FR-VrT" eventType="touchUpInside" id="CGK-eL-K7X"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lkb-8e-3Wr">
+                                <rect key="frame" x="149" y="694" width="116" height="97"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Lkb-8e-3Wr" secondAttribute="height" multiplier="116:97" id="Nfx-uh-6Se"/>
+                                    <constraint firstAttribute="width" constant="116" id="rYB-MQ-BWn"/>
+                                    <constraint firstAttribute="height" constant="97" id="saX-oa-erI"/>
+                                </constraints>
+                                <color key="tintColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" image="earthben"/>
+                                <connections>
+                                    <action selector="viewEarthBtn:" destination="BV1-FR-VrT" eventType="touchUpInside" id="uuR-g1-oFN"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P9T-mr-e3a">
+                                <rect key="frame" x="171" y="54" width="72" height="72"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="72" id="Jkr-q6-KbA"/>
+                                    <constraint firstAttribute="height" constant="72" id="ZmR-XE-Dhh"/>
+                                </constraints>
+                                <state key="normal" image="btn"/>
+                                <connections>
+                                    <action selector="actionAsk:" destination="BV1-FR-VrT" eventType="touchUpInside" id="ZCl-rC-Gpy"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cHL-Zs-zaI">
+                                <rect key="frame" x="278" y="694" width="116" height="97"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="116" id="121-9e-KMp"/>
+                                    <constraint firstAttribute="width" secondItem="cHL-Zs-zaI" secondAttribute="height" multiplier="116:97" id="Ba3-vH-AXk"/>
+                                    <constraint firstAttribute="height" constant="97" id="vlQ-8s-kNW"/>
+                                </constraints>
+                                <color key="tintColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" image="martepng-1"/>
+                                <connections>
+                                    <action selector="viewMarsBtn:" destination="BV1-FR-VrT" eventType="touchUpInside" id="Q8v-R8-9T0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O1f-uO-y6e">
+                                <rect key="frame" x="20" y="694" width="116" height="97"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="97" id="Jbj-Lf-b1C"/>
+                                    <constraint firstAttribute="width" secondItem="O1f-uO-y6e" secondAttribute="height" multiplier="116:97" id="p6f-To-G19"/>
+                                    <constraint firstAttribute="width" constant="116" id="pr5-HG-2tc"/>
+                                </constraints>
+                                <state key="normal" image="ssy"/>
+                                <connections>
+                                    <action selector="viewSolarSystemBtn:" destination="BV1-FR-VrT" eventType="touchUpInside" id="6IR-uj-SlD"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Lkb-8e-3Wr" firstAttribute="height" secondItem="O1f-uO-y6e" secondAttribute="height" id="00q-lN-Gxs"/>
+                            <constraint firstItem="BrB-h1-WRS" firstAttribute="centerX" secondItem="P9T-mr-e3a" secondAttribute="centerX" id="1dC-h5-6my"/>
+                            <constraint firstItem="fQZ-KI-GVf" firstAttribute="bottom" secondItem="Lkb-8e-3Wr" secondAttribute="bottom" constant="71" id="2kT-KZ-yMP"/>
+                            <constraint firstItem="DNZ-GP-Lha" firstAttribute="top" secondItem="U0K-SW-4ec" secondAttribute="top" constant="54" id="2y6-rl-Jfg"/>
+                            <constraint firstItem="Lkb-8e-3Wr" firstAttribute="width" secondItem="O1f-uO-y6e" secondAttribute="width" id="86q-1z-XGb"/>
+                            <constraint firstItem="cHL-Zs-zaI" firstAttribute="height" secondItem="O1f-uO-y6e" secondAttribute="height" id="DZ7-8n-xGG"/>
+                            <constraint firstItem="BrB-h1-WRS" firstAttribute="leading" secondItem="fQZ-KI-GVf" secondAttribute="leading" id="K4G-zQ-aSW"/>
+                            <constraint firstItem="cHL-Zs-zaI" firstAttribute="leading" secondItem="Lkb-8e-3Wr" secondAttribute="trailing" constant="13" id="MY0-Eh-Ern"/>
+                            <constraint firstItem="Lkb-8e-3Wr" firstAttribute="leading" secondItem="O1f-uO-y6e" secondAttribute="trailing" constant="13" id="QiU-1Y-EPF"/>
+                            <constraint firstItem="ogV-br-3bK" firstAttribute="top" secondItem="U0K-SW-4ec" secondAttribute="top" constant="54" id="RSt-1U-jMr"/>
+                            <constraint firstItem="P9T-mr-e3a" firstAttribute="centerX" secondItem="U0K-SW-4ec" secondAttribute="centerX" id="Roz-Ty-7eh"/>
+                            <constraint firstItem="fQZ-KI-GVf" firstAttribute="bottom" secondItem="cHL-Zs-zaI" secondAttribute="bottom" constant="71" id="ZjE-oF-U1U"/>
+                            <constraint firstItem="fQZ-KI-GVf" firstAttribute="bottom" secondItem="O1f-uO-y6e" secondAttribute="bottom" constant="71" id="aQp-J8-yCS"/>
+                            <constraint firstItem="fQZ-KI-GVf" firstAttribute="trailing" secondItem="DNZ-GP-Lha" secondAttribute="trailing" constant="91" id="dPB-hx-fxb"/>
+                            <constraint firstItem="O1f-uO-y6e" firstAttribute="leading" secondItem="fQZ-KI-GVf" secondAttribute="leading" constant="20" id="f4y-j6-3rq"/>
+                            <constraint firstItem="fQZ-KI-GVf" firstAttribute="trailing" secondItem="cHL-Zs-zaI" secondAttribute="trailing" constant="20" id="fiy-ma-1KX"/>
+                            <constraint firstItem="BrB-h1-WRS" firstAttribute="centerY" secondItem="U0K-SW-4ec" secondAttribute="centerY" id="rPk-wS-Ssg"/>
+                            <constraint firstItem="P9T-mr-e3a" firstAttribute="top" secondItem="U0K-SW-4ec" secondAttribute="top" constant="54" id="wmc-h7-l1d"/>
+                            <constraint firstItem="BrB-h1-WRS" firstAttribute="top" secondItem="U0K-SW-4ec" secondAttribute="topMargin" constant="-88" id="xea-n1-fxX"/>
+                            <constraint firstItem="ogV-br-3bK" firstAttribute="leading" secondItem="fQZ-KI-GVf" secondAttribute="leading" constant="91" id="yDS-yB-fVl"/>
+                            <constraint firstItem="cHL-Zs-zaI" firstAttribute="width" secondItem="O1f-uO-y6e" secondAttribute="width" id="ykE-I5-UHF"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="fQZ-KI-GVf"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="nLo-d2-LYC"/>
+                    <connections>
+                        <outlet property="earthbtn" destination="Lkb-8e-3Wr" id="Tbi-fF-APp"/>
+                        <outlet property="marsbtn" destination="cHL-Zs-zaI" id="esW-GH-SCI"/>
+                        <outlet property="sceneView" destination="BrB-h1-WRS" id="5nT-qQ-ynl"/>
+                        <outlet property="solarSystembtn" destination="O1f-uO-y6e" id="GrI-um-mkd"/>
+                        <segue destination="Mc6-KW-cDt" kind="show" id="C7X-IZ-IqU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1121.7391304347827" y="150.66964285714286"/>
+        </scene>
+        <!--Info Controller-->
+        <scene sceneID="Vih-Zc-JWC">
+            <objects>
+                <viewController id="Mc6-KW-cDt" customClass="InfoController" customModule="SolAR_System" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="MvM-oZ-L0R">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Planet's information" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PNo-6E-HfG">
+                                <rect key="frame" x="85" y="86" width="244" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FrE-0A-ahY">
+                                <rect key="frame" x="85" y="158" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="20" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EFt-8h-Ozl">
+                                <rect key="frame" x="33" y="336" width="329" height="319"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="jbX-Y3-m6J"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="vZl-Ju-TVQ"/>
+                    <connections>
+                        <outlet property="Infolabel" destination="EFt-8h-Ozl" id="Ou1-pD-lyd"/>
+                        <outlet property="imageV" destination="FrE-0A-ahY" id="HY0-ug-7ZG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="e6a-ss-LHy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2110.144927536232" y="225.66964285714283"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="fGd-7x-VYd">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="8q1-KK-Rcj" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="AMl-tS-bvq">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BV1-FR-VrT" kind="relationship" relationship="rootViewController" id="1An-P3-qFJ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mji-mm-Z5F" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="138.61607142857142"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="uMw-nB-5yZ"/>
+    </inferredMetricsTieBreakers>
+    <resources>
+        <image name="Group 2" width="72" height="72"/>
+        <image name="Group 3" width="72" height="72"/>
+        <image name="btn" width="71.5" height="71.5"/>
+        <image name="earthben" width="139" height="94.5"/>
+        <image name="martepng-1" width="145" height="96"/>
+        <image name="ssy" width="137" height="97"/>
+    </resources>
+</document>
