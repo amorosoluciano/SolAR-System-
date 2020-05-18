@@ -1,5 +1,3 @@
-# AR Project AR Solar System
 
-> Build an AR Solar System with Swift and ARKit for iOS Development.
 
-![AR Project AR Solar System](https://i.imgur.com/IL9SdwF.png "AR Project AR Solar System")
+Through the use of ARKit technology, the app will make you visualize the Solar System before your eyes.
